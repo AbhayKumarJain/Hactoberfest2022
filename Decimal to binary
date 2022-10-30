@@ -1,0 +1,18 @@
+    #include<stdio.h>    
+    #include<stdlib.h>  
+    int main(){  
+    int N,i, a[100];    
+    printf("Enter the decimal number: ");    
+    scanf("%d",&N);    
+    for(i=0;N!=0;i++)    
+    {    
+    a[i]=N%2;    
+    N=N/2;    
+    }    
+    printf("\n Binary is=");    
+    for(i=i-1;i>=0;i--)    
+    {    
+    printf("%d",a[i]);    
+    }    
+    return 0;  
+    }  
