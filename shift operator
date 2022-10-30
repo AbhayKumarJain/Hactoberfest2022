@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main(){
+int a;
+printf("Enter the power of 2 ");
+scanf("%d", &a);
+a = 1<<a;
+printf("The value is %d", a);
+}
