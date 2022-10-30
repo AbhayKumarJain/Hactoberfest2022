@@ -1,0 +1,37 @@
+class Solution
+
+{
+
+    public:
+
+    void rearrangeEvenOdd(Node *head)
+
+    {
+
+        Node* odd = head;
+
+        Node* temp = head->next;
+
+        Node* even = head->next;
+
+        
+
+        while(odd->next!=NULL and even->next!=NULL){
+
+            odd->next = odd->next->next;
+
+            even->next = even->next->next;
+
+            odd = odd->next;
+
+            even = even->next;
+
+        }
+
+        odd->next = temp;
+
+    }
+
+ 
+
+};
