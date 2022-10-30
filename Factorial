@@ -1,0 +1,13 @@
+    #include<stdio.h>  
+    int main()    
+    {    
+     int i,f=1,N;    
+     printf("Enter a number: ");    
+     scanf("%d",&N);    
+     for(i=1;i<=N;i++)
+     {    
+        f=f*i;    
+     }    
+     printf("Factorial of %d is: %d",N,f);    
+    return 0;  
+    }   
